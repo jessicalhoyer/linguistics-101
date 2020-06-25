@@ -1,0 +1,250 @@
+/* main stylesheet */
+
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	background-color:#DDE6D8;
+	color:#000;
+	font-family:"Open Sans",helvetica,sans-serif;
+	font-size:1em;
+}
+
+a {
+	text-decoration:none;
+	color:#fff;
+	text-shadow:0px 1px 5px black;
+	
+	transition:all 0.4s ease;
+}
+
+a:hover {
+	text-shadow:0 1px 5px white;
+	color:#000;
+}
+
+/* container elements */
+
+#wrapper {
+	width:70%;
+	margin:auto;
+	background-color:#AACF97;
+	overflow:hidden;
+	border:3px solid #B9D8AA;
+	box-sizing:border-box;
+}
+
+header {
+	text-align:center;
+	margin-top:3.6em;
+}
+
+header img {
+	width:100%;
+}
+
+footer {
+	background-color:#6b825f;
+	margin:0.4em auto 0.4em;
+	width:70%;
+	padding:0.25em;
+	box-sizing:border-box;
+}
+
+/* navigation menu */
+
+nav {
+	background-color:#aacf97;
+	margin:auto;
+	text-align:center;
+	padding-top:1em;
+	top:0;
+	position:fixed;
+	width:100%;
+}
+
+/*to add bottom padding on the nav menu without the breadcrumb nav*/
+nav.home {
+	padding-bottom:1em;
+}
+
+nav ul li {
+	list-style-type:none;
+	display:inline;
+	margin-right:20px;
+}
+
+.breadcrumb-nav {
+	background-color:#6B825F;
+	font-size:0.8em;
+	padding:0.2em;
+}
+
+.breadcrumb-nav ul li {
+	margin-right:0;
+}
+
+.breadcrumb-nav ul li+li:before {
+content: "\203A";
+}
+
+
+/* section IDs */
+
+#welcome {
+	padding:1em;
+	float:left;
+	width:60%;
+	background-color:#aacf97;
+	box-sizing:border-box;
+}
+
+#spotlight {
+	padding:1em;
+	float:left;
+	width:40%;
+	background-color:#B9D8AA;
+	box-sizing:border-box;
+}
+
+#article {
+	padding:1em;
+	float:left;
+	width:75%;
+	box-sizing:border-box;
+}
+
+#article-nav {
+	padding:1em;
+	float:left;
+	width:25%;
+	box-sizing:border-box;
+	background-color:#B9D8AA;
+}
+
+#article-nav ul li {
+	list-style-type:none;
+}
+
+/* ===== TEXT STYLES ===== */
+
+p {
+	text-align:justify;
+	font-size:0.9em;
+	line-height:1.4em;
+}
+
+/*for spotlight article titles*/
+.highlight {
+	text-align:center;
+	font-size:1.2em;
+	font-style:italic;
+}
+
+/* article headings */
+
+h1 {
+	border-bottom:3px solid #6B825F;
+	margin-bottom:0.5em;
+	word-break:break-word;
+	color:#D8E9D0;
+	text-shadow:1px 1px 4px black;
+	font-size:2em;
+}
+
+/* article navigation headings */
+
+h2 {
+	border-bottom:3px solid #6B825F;
+	margin-bottom:0.5em;
+	word-break:break-word;
+}
+
+/* article subheadings */
+
+h3 {
+	font-size:1.5em;
+	margin-bottom:0.5em;
+	text-transform:capitalize;
+}
+
+/* list styles */
+
+section ul, ol {
+	padding:1em;
+}
+
+section ul li,section ol li {
+	font-size:0.9em;
+	line-height:1.4em;
+}
+
+dl dt {
+	color:purple;
+	font-weight:bold;
+	letter-spacing:2px;
+}
+
+dl dd {
+	margin-left:2em;
+	margin-bottom:1em;
+}
+
+.center {
+	text-align:center;
+}
+
+.source {
+	text-align:center;
+	font-size:0.6em;
+}
+
+/* form styles */
+
+fieldset {
+	border:none;
+}
+
+form {
+	margin-top:1.5em;
+}
+
+label {
+	display:block;
+	font-size:0.9em;
+	padding:0.7em 0 0.7em;
+	font-weight:bold;
+}
+
+textarea, input, select {
+	background-color:#B9D8AA;
+	border:1px solid #6b825f;
+	padding:0.4em;
+}
+
+textarea {
+	margin-bottom:0.2em;
+}
+
+/* table styles */
+
+table {
+	margin:auto;
+	border:1px solid #6b825f;
+	padding:1em;
+	border-collapse:collapse;
+}
+
+th, td {
+	padding:0.4em;
+	border:1px solid #6b825f;
+	border-collapse:collapse;
+}
+
+caption {
+	font-size:1.2em;
+	background-color:#6b825f;
+	color:#fff;
+}
